@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaBot - Ultimate Discord Bot</title>
+    <meta name="description" content="MegaBot - A comprehensive Discord bot with economy, gaming, utility tools, and more!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>MegaBot</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#commands">Commands</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#" class="btn-invite" style="cursor: not-allowed; opacity: 0.6; pointer-events: none;">
+                    <i class="fas fa-clock"></i> Coming Soon
+                </a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Welcome to <span class="gradient-text">MegaBot</span></h1>
+                <p class="hero-subtitle">The ultimate all-in-one Discord bot with 66+ commands</p>
+                <p class="hero-description">
+                    Economy system, gaming integration, utility tools, 
+                    moderation tools, and so much more!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-secondary" style="cursor: not-allowed; opacity: 0.6;">
+                        <i class="fas fa-clock"></i> Discord Server Coming Soon
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-arrow-down"></i> Learn More
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-server"></i>
+                        <div>
+                            <span class="stat-number" id="serverCount">-</span>
+                            <span class="stat-label">Servers</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <span class="stat-number" id="userCount">-</span>
+                            <span class="stat-label">Users</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-terminal"></i>
+                        <div>
+                            <span class="stat-number">66</span>
+                            <span class="stat-label">Commands</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="bot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fas fa-coins"></i>
+                    <span>Economy</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Gaming</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-tools"></i>
+                    <span>Utility Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need in one bot</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Economy System</h3>
+                    <p>Complete virtual economy with daily rewards, work commands, item shop with earning boosts, and gambling games including slots and blackjack.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Balance & Transactions</li>
+                        <li><i class="fas fa-check"></i> Earning Boosts & Power-ups</li>
+                        <li><i class="fas fa-check"></i> Casino Games</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming Integration</h3>
+                    <p>LFG system for finding gaming partners, game roles, status tracking, and game deal notifications.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> LFG Posts</li>
+                        <li><i class="fas fa-check"></i> Game Roles</li>
+                        <li><i class="fas fa-check"></i> Deal Alerts</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Moderation Tools</h3>
+                    <p>Complete moderation suite with kick, ban, mute, warnings, message clearing, and moderation logs.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> User Management</li>
+                        <li><i class="fas fa-check"></i> Warning System</li>
+                        <li><i class="fas fa-check"></i> Mod Logs</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Study Tools</h3>
+                    <p>Study timers, note-taking, flashcards, quizzes, study groups, and resource sharing.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Study Timer</li>
+                        <li><i class="fas fa-check"></i> Flashcards</li>
+                        <li><i class="fas fa-check"></i> Study Groups</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Utility Commands</h3>
+                    <p>Polls, reminders, translation, calculator, user info, server info, and more useful tools.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Polls & Reminders</li>
+                        <li><i class="fas fa-check"></i> Translation</li>
+                        <li><i class="fas fa-check"></i> Server Info</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laugh"></i>
+                    </div>
+                    <h3>Fun & Games</h3>
+                    <p>Jokes, memes, 8ball, trivia, would you rather, dice rolling, and entertainment commands.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Trivia Games</li>
+                        <li><i class="fas fa-check"></i> Jokes & Memes</li>
+                        <li><i class="fas fa-check"></i> Mini Games</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Statistics & Analytics</h3>
+                    <p>Server stats, user activity tracking, leaderboards, growth analytics, and command usage stats.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> User Stats</li>
+                        <li><i class="fas fa-check"></i> Leaderboards</li>
+                        <li><i class="fas fa-check"></i> Activity Graphs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="commands">
+        <div class="container">
+            <h2 class="section-title">Command Categories</h2>
+            <p class="section-subtitle">Explore all 66 slash commands across 9 categories</p>
+            
+            <div class="commands-grid">
+                <div class="command-category">
+                    <div class="category-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>Help & Info</h3>
+                    </div>
+                    <div class="command-list">
+                        <span class="command">/help</span>
+                        <span class="command">/setup</span>
+                        <span class="command">/info</span>
+                        <span class="command">/dashboard</span>
+                    </div>
+                </div>
+
+                <div class="command-category">
+                    <div class="category-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>Economy</h3>
+                    </div>
+                    <div class="command-list">
+                        <span class="command">/balance</span>
+                        <span class="command">/daily</span>
+                        <span class="command">/work</span>
+                        <span class="command">/shop</span>
+                        <span class="command">/buy</span>
+                        <span class="command">/slots</span>
+                        <span class="command">/blackjack</span>
+                        <span class="command">/transfer</span>
+                        <span class="command">/leaderboard</span>
+                    </div>
+                </div>
+
+                <div class="command-category">
+                    <div class="category-header">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Gaming</h3>
+                    </div>
+                    <div class="command-list">
+                        <span class="command">/playing</span>
+                        <span class="command">/lfg</span>
+                        <span class="command">/gamerole</span>
+                        <span class="command">/gamedeal</span>
+                        <span class="command">/steam</span>
+                    </div>
+                </div>
+
+                <div class="command-category">
+                    <div class="category-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Moderation</h3>
+                    </div>
+                    <div class="command-list">
+                        <span class="command">/kick</span>
+                        <span class="command">/ban</span>
+                        <span class="command">/unban</span>
+                        <span class="command">/mute</span>
+                        <span class="command">/unmute</span>
+                        <span class="command">/warn</span>
+                        <span class="command">/clear</span>
+                        <span class="command">/slowmode</span>
+                        <span class="command">/lock</span>
+                        <span class="command">/unlock</span>
+                        <span class="command">/setwelcome</span>
+                        <span class="command">/setautorole</span>
+                    </div>
+                </div>
+
+                <div class="command-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Utility</h3>
+                    </div>
+                    <div class="command-list">
+                        <span class="command">/poll</span>
+                        <span class="command">/remind</span>
+                        <span class="command">/translate</span>
+                        <span class="command">/calculate</span>
+                        <span class="command">/userinfo</span>
+                        <span class="command">/serverinfo</span>
+                        <span class="command">/avatar</span>
+                    </div>
+                </div>
+
+                <div class="command-category">
+                    <div class="category-header">
+                        <i class="fas fa-laugh"></i>
+                        <h3>Fun</h3>
+                    </div>
+                    <div class="command-list">
+                        <span class="command">/joke</span>
+                        <span class="command">/meme</span>
+                        <span class="command">/8ball</span>
+                        <span class="command">/trivia</span>
+                        <span class="command">/flip</span>
+                        <span class="command">/roll</span>
+                        <span class="command">/choose</span>
+                        <span class="command">/fortune</span>
+                        <span class="command">/rate</span>
+                    </div>
+                </div>
+
+                <div class="command-category">
+                    <div class="category-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Study Tools</h3>
+                    </div>
+                    <div class="command-list">
+                        <span class="command">/pomodoro</span>
+                        <span class="command">/homework</span>
+                        <span class="command">/quiz</span>
+                        <span class="command">/flashcard</span>
+                        <span class="command">/listhomework</span>
+                        <span class="command">/completehomework</span>
+                        <span class="command">/viewquiz</span>
+                        <span class="command">/viewflashcard</span>
+                    </div>
+                </div>
+
+                <div class="command-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Statistics</h3>
+                    </div>
+                    <div class="command-list">
+                        <span class="command">/serverstats</span>
+                        <span class="command">/channelstats</span>
+                        <span class="command">/roleinfo</span>
+                        <span class="command">/topchatters</span>
+                        <span class="command">/emojistats</span>
+                        <span class="command">/membercount</span>
+                    </div>
+                </div>
+
+                <div class="command-category">
+                    <div class="category-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Tournaments</h3>
+                    </div>
+                    <div class="command-list">
+                        <span class="command">/tournament create</span>
+                        <span class="command">/tournament join</span>
+                        <span class="command">/tournament leave</span>
+                        <span class="command">/tournament info</span>
+                        <span class="command">/tournament start</span>
+                        <span class="command">/tournament list</span>
+                        <span class="command">/tournament delete</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="command-note">
+                <i class="fas fa-info-circle"></i>
+                <p>Use <code>/help</code> in Discord to see all available commands and detailed descriptions!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Bot Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <i class="fas fa-server"></i>
+                    <h3 id="statServers">-</h3>
+                    <p>Active Servers</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-users"></i>
+                    <h3 id="statUsers">-</h3>
+                    <p>Total Users</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-terminal"></i>
+                    <h3>66</h3>
+                    <p>Slash Commands</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>99.9%</h3>
+                    <p>Uptime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-robot"></i> MegaBot</h3>
+                    <p>The ultimate all-in-one Discord bot</p>
+                    <div class="social-links">
+                        <a href="#" style="cursor: not-allowed; opacity: 0.5;" title="Coming Soon"><i class="fab fa-discord"></i></a>
+                        <a href="#" style="cursor: not-allowed; opacity: 0.5;" title="Coming Soon"><i class="fab fa-github"></i></a>
+                        <a href="#" style="cursor: not-allowed; opacity: 0.5;" title="Coming Soon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#commands">Commands</a></li>
+                        <li><a href="#stats">Statistics</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MegaBot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Command Details Overlay -->
+    <div id="commandOverlay" class="command-overlay">
+        <div class="overlay-content">
+            <button class="overlay-close" id="closeOverlay">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="overlay-header">
+                <i class="fas fa-terminal"></i>
+                <h2 id="overlayCommandName">/command</h2>
+            </div>
+            <div class="overlay-body">
+                <div class="command-syntax">
+                    <h3>Syntax</h3>
+                    <code id="overlayCommandSyntax">/command [parameters]</code>
+                </div>
+                <div class="command-description">
+                    <h3>Description</h3>
+                    <p id="overlayCommandDescription">Command description</p>
+                </div>
+                <div class="command-examples" id="overlayExamples">
+                    <h3>Examples</h3>
+                    <div id="overlayExamplesList"></div>
+                </div>
+                <div class="command-permissions" id="overlayPermissions">
+                    <h3>Required Permissions</h3>
+                    <p id="overlayPermissionsList"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
